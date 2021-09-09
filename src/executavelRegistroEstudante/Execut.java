@@ -11,7 +11,7 @@ public class Execut {
         Aluno aluno1 = new Aluno();
 		
 
-		aluno1.setNome(JOptionPane.showInputDialog("Qual nome do aluno? "));;
+		aluno1.setNome(JOptionPane.showInputDialog("Qual nome dsso aluno? "));;
 		aluno1.setIdade(Integer.parseInt(JOptionPane.showInputDialog("Qual a idade do aluno? ")));;
 		aluno1.setDataNascimento(JOptionPane.showInputDialog("Qual data de nascimento do aluno? "));;
 		aluno1.setRegistroGeral(JOptionPane.showInputDialog("Qual é o registro  geral do aluno? "));;
