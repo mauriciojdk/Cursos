@@ -1,5 +1,8 @@
 package registroEstudante;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Aluno {
     
         private String nome;
@@ -12,7 +15,17 @@ public class Aluno {
 		private String dataMatricula;
 		private String nomeEscola;
 		private String serieMatriculado;
-		
+
+		private List <Disciplina> disciplinas = new ArrayList<Disciplina>();
+
+
+		public List<Disciplina> getDisciplinas() {
+			return disciplinas;
+		}
+		public void setDisciplinas(List<Disciplina> disciplinas) {
+			this.disciplinas = disciplinas;
+		}
+
 		public String getNome() {
 			return nome;
 		}
@@ -72,6 +85,31 @@ public class Aluno {
 		}
 		public void setSerieMatriculado(String serieMatriculado) {
 			this.serieMatriculado = serieMatriculado;
+		}
+
+		/*Method - student grade*/
+
+		public double getMediaNota(){
+
+			double soma = 0;
+
+			for (Disciplina disciplina : disciplinas) {
+				soma += disciplina.getNota();
+			}
+
+			return soma / disciplinas.size() ;
+		}
+		
+		/*Method - True for aproved / False for reproved*/
+
+		public boolean getAlunoAprovado(){
+			double media = this.getMediaNota();
+			if (media >= 70) {
+				return true;
+			}else {
+				return false;
+			}
+
 		}
 		
 
