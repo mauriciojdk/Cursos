@@ -100,17 +100,27 @@ public class Aluno {
 			return soma / disciplinas.size() ;
 		}
 		
-		/*Method - True for aproved / False for reproved*/
+		/*Method - for get result of the student if is aproved or reproved*/
 
-		public boolean getAlunoAprovado(){
+		public String getAlunoAprovado(){
 			double media = this.getMediaNota();
-			if (media >= 70) {
-				return true;
+			if (media >= 50) {
+				if(media >= 70){
+					return "Aprovado";
 			}else {
-				return false;
+				return "Recuperação";
 			}
-
+		} else {
+			return "Reprovado";
+			}
 		}
-		
+		@Override
+		public String toString() {
+			return "Aluno [dataMatricula=" + dataMatricula + ", dataNascimento=" + dataNascimento + ", disciplinas="
+					+ disciplinas + ", idade=" + idade + ", nome=" + nome + ", nomeEscola=" + nomeEscola + ", nomeMae="
+					+ nomeMae + ", nomePai=" + nomePai + ", numeroCpf=" + numeroCpf + ", registroGeral=" + registroGeral
+					+ ", serieMatriculado=" + serieMatriculado + "]";
+		}
 
+		
 }
