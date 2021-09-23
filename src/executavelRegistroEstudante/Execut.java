@@ -58,7 +58,7 @@ public class Execut {
 				}
 				/*for (int test = 0; test <= 3 ; test++) {
 					System.out.println(aluno1.getDisciplinas().toString());   // - Show the list
-				}*/
+				}*/ 
 			}
 			alunos.add(aluno1);
 		}
@@ -66,6 +66,10 @@ public class Execut {
 			
 		for (Aluno aluno : alunos) {
 			/* Show student text */
+			if (aluno.getNome().equalsIgnoreCase("alex")) {
+				alunos.remove(aluno); // Remove stund "alex" and not show the data
+			break;
+			} else{
 			JOptionPane.showMessageDialog(null,  "Nome do aluno: " + aluno.getNome() + "\n" +
 			"Idade do aluno: " + aluno.getIdade() + "\n" +
 			"Data de nascimento: " + aluno.getDataNascimento() + "\n" +
@@ -77,6 +81,7 @@ public class Execut {
 			"Nome da escola:  " + aluno.getNomeEscola() + "\n" +
 			"Serie: " + aluno.getSerieMatriculado() + "\n" +
 			"Situação do aluno: " + aluno.getAlunoAprovado());
+			}
 		}
 			
 
