@@ -14,7 +14,7 @@ import Excecao.ExcecaoProcessamento;
 public class Execut {
     public static void main(String[] args) throws ExcecaoProcessamento {
 		try {
-		List<Aluno> alunos = null;
+		List<Aluno> alunos = new ArrayList<Aluno>();
 
 		for (int qtd = 1; qtd <= 2; qtd++){
 
