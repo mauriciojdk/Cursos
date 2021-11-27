@@ -1,8 +1,10 @@
 package Executavel;
 
+import Auxiliares.Autenticacao;
 import Classes.Aluno;
 import Classes.Diretor;
 import Classes.Secretario;
+import Interfaces.PermitirAcesso;
 
 import javax.swing.*;
 
@@ -35,11 +37,9 @@ public class TestedeClasses {
         String login = JOptionPane.showInputDialog("Informe o login: ");
         String senha = JOptionPane.showInputDialog("Informe a senha: ");
 
-        Secretario secretario1 = new Secretario();
-        secretario1.setLogin(login);
-        secretario1.setSenha(senha);
+        PermitirAcesso permitirAcesso = new Secretario(login, senha);
 
-        if (secretario1.autenticar()){
+        if (new Autenticacao(new Secretario(login, senha)).autenticarKey()){
             JOptionPane.showMessageDialog(null, "Logado com sucesso!");
         } else {
             JOptionPane.showMessageDialog(null, "Acesso negado!");
