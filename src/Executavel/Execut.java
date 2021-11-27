@@ -1,5 +1,6 @@
 package Executavel;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,12 +8,13 @@ import javax.swing.JOptionPane;
 
 import Classes.Aluno;
 import Classes.Disciplina;
+import Excecao.ExcecaoProcessamento;
 
 
 public class Execut {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExcecaoProcessamento {
 		try {
-		List<Aluno> alunos = new ArrayList<Aluno>();
+		List<Aluno> alunos = null;
 
 		for (int qtd = 1; qtd <= 2; qtd++){
 
@@ -86,7 +88,7 @@ public class Execut {
 
 
     }catch (Exception e){
-			e.printStackTrace();
+		  throw new ExcecaoProcessamento(e.toString());
 		}
 	}
 }
