@@ -1,4 +1,4 @@
-package java.classes;
+package Classes;
 
 public class Disciplina {
     

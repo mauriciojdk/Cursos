@@ -1,5 +1,5 @@
-package java.classes;
-
+package Classes;
+//Subclasse
 public class Secretario extends Pessoa{
 
     private String registro;
@@ -28,5 +28,15 @@ public class Secretario extends Pessoa{
 
     public void setExperiencia(String experiencia) {
         this.experiencia = experiencia;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Secretario{" +
+                "registro='" + registro + '\'' +
+                ", nivelCargo='" + nivelCargo + '\'' +
+                ", experiencia='" + experiencia + '\'' +
+                '}';
     }
 }

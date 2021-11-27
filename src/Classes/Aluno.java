@@ -1,10 +1,10 @@
-package java.classes;
+package Classes;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import constantes.StatusAluno;
-
+//Subclasse
 public class Aluno extends Pessoa{
     
 

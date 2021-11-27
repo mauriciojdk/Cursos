@@ -5,8 +5,8 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import java.classes.Aluno;
-import java.classes.Disciplina;
+import Classes.Aluno;
+import Classes.Disciplina;
 
 
 public class Execut {

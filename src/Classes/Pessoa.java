@@ -1,5 +1,5 @@
-package java.classes;
-
+package Classes;
+//Superclasse
 public class Pessoa {
     protected String nome;
     protected int idade;
