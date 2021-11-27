@@ -1,12 +1,12 @@
-package executavelRegistroEstudante;
+package executavel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import registroEstudante.Aluno;
-import registroEstudante.Disciplina;
+import java.classes.Aluno;
+import java.classes.Disciplina;
 
 
 public class Execut {

@@ -1,4 +1,4 @@
-package registroEstudante;
+package java.classes;
 
 public class Disciplina {
     
