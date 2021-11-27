@@ -1,6 +1,6 @@
 package Classes;
 //Superclasse
-public class Pessoa {
+public abstract class Pessoa {
     protected String nome;
     protected int idade;
     protected String dataNascimento;
@@ -8,6 +8,8 @@ public class Pessoa {
     protected String numeroCpf;
     protected String nomeMae;
     protected String nomePai;
+
+    public abstract double salario();
 
     public String getNome() {
         return nome;

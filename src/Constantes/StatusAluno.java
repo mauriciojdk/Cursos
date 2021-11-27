@@ -1,4 +1,4 @@
-package constantes;
+package Constantes;
 
 public class StatusAluno {
 

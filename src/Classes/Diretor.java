@@ -39,4 +39,9 @@ public class Diretor extends Pessoa{
                 ", titulacao='" + titulacao + '\'' +
                 '}';
     }
+
+    @Override
+    public double salario() {
+        return 5000;
+    }
 }

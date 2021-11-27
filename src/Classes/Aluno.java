@@ -3,7 +3,7 @@ package Classes;
 import java.util.ArrayList;
 import java.util.List;
 
-import constantes.StatusAluno;
+import Constantes.StatusAluno;
 //Subclasse
 public class Aluno extends Pessoa{
     
@@ -22,7 +22,12 @@ public class Aluno extends Pessoa{
 			this.disciplinas = disciplinas;
 		}
 
-		public String getNome() {
+	@Override
+	public double salario() {
+		return 1000.80;
+	}
+
+	public String getNome() {
 			return nome;
 		}
 		public void setNome(String nome) {
