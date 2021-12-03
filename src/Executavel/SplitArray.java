@@ -1,5 +1,8 @@
 package Executavel;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class SplitArray {
     public static void main(String[] args) {
 
@@ -14,6 +17,16 @@ public class SplitArray {
         System.out.println("Nota3:" + valoresArray[4]);
         System.out.println("Nota4:" + valoresArray[5]);
 
+        List<String> list = Arrays.asList(valoresArray);
+
+        for (String valorString : list){
+            System.out.println(valorString);
+        }
+
+            String[] conversaoArray = list.toArray(new String[6]);
+        for (int pos = 0; pos < conversaoArray.length; pos++){
+            System.out.println(conversaoArray[pos]);
+        }
 
     }
 
